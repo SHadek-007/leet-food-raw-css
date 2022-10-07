@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Readex Pro", sans-serif !important;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF9EA;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  margin-left: 26px;
+}
+.navbar ul li a {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: rgba(29, 29, 29, 0.7);
+}
+.navbar ul li:hover a {
+  font-weight: 500;
+  color: #1d1d1d;
+}
+.nav-style:hover{
+    border-bottom: 3px solid #ffcb45;
+}
+.btn-style {
+  background: #ffcb45;
+  border-radius: 50px;
+  width: 122px;
+  height: 38.13px;
+  border: none;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  color: #1d1d1d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-style img{
+    margin-right: 5px;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    cursor: pointer;
+    display: none;
+}
+.nav-img{
+    width: 35px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width: 1100px) {
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background-color: #fff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    header .navbar ul{
+        flex-direction: column;
+    }
+    header .navbar ul li{
+        width: 100%;
+        padding: 0px 6%;
+        margin-top: 10px;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
