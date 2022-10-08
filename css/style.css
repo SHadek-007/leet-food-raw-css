@@ -202,6 +202,7 @@ header label {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 24px;
   margin-top: 32px;
+  margin-bottom: 70px;
 }
 .menu {
   border-radius: 10px;
@@ -248,10 +249,46 @@ header label {
   line-height: 28px;
   color: #1d1d1d;
 }
-.menu-img .last{
+.menu-img .last {
   padding-top: 9px;
 }
+.menu-btn {
+  background: #ffcb45;
+  border-radius: 50px;
+  width: 136px;
+  padding: 12px 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1d1d1d;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
 
+/******************* Join-Us Style Start  *******************/
+.join-us{
+  background-image: url("../assets/img/join.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 332px;
+  border-radius: 10px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-us h1{
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+text-align: center;
+color: #FFFFFF;
+margin-bottom: 30px;
+}
 /******************* Navbar Response File  *******************/
 @media only screen and (max-width: 1100px) {
   header label {
@@ -278,8 +315,8 @@ header label {
   #menu-bar:checked ~ .navbar {
     display: initial;
   }
-  .all-menu{
-    grid-template-columns: repeat(2,1fr);
+  .all-menu {
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
   }
 }
@@ -297,8 +334,8 @@ header label {
     width: 90%;
     justify-content: center;
   }
-  .all-menu{
-    grid-template-columns: repeat(2,1fr);
+  .all-menu {
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
   }
 }
@@ -327,7 +364,7 @@ header label {
     grid-template-columns: 1fr;
     margin-top: 32px;
   }
-  .all-menu{
+  .all-menu {
     grid-template-columns: 1fr;
   }
 }
@@ -354,5 +391,8 @@ header label {
   }
   .service-text p {
     font-size: 18px;
+  }
+  .join-us h1{
+    font-size: 23px;
   }
 }
